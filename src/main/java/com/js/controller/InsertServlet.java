@@ -30,7 +30,7 @@ public class InsertServlet extends HttpServlet {
 		int res=CustomerCURD.insertCustomer(c);
 		RequestDispatcher rd= req.getRequestDispatcher("result.jsp");
 		if (res>0) {
-			req.setAttribute("msg", "inserted successfully");
+			req.setAttribute("msg", "inserted successfully it to product store");
 			rd.forward(req, resp);
 		} else {
 
